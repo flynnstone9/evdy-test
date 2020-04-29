@@ -1,8 +1,7 @@
 ## Simple Redux Modal
 
 Basic React Modal made with Redux.
-
-Hosted on FireBase [View Live Project](https://evdy-test.web.app/).
+Hosted on Firebase [View Live Project](https://evdy-test.web.app/).
 
 To run locally:</br>
 `git clone https://github.com/flynnstone9/evdy-test.git`</br>
