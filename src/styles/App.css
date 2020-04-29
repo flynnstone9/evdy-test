@@ -1,0 +1,45 @@
+:root {
+	--main-bg-color: #0f1923;
+	--secondary-bg-color: #1c2f41;
+	--main-accent-color: #ff4655;
+	--main-font-color: #fff;
+	--secondary-font-color: #ece8e1;
+}
+
+body {
+	margin: 0;
+}
+
+.App {
+	background-color: var(--main-bg-color);
+	color: var(--main-font-color);
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+.main-container {
+	min-height: 275px;
+	min-width: 250px;
+	background-color: var(--secondary-bg-color);
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 0, 5px solid #fff;
+	font-size: 1.3rem;
+	border-bottom: var(--main-accent-color) 2px solid;
+	transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+	.main-container {
+		min-height: 500px;
+		min-width: 470px;
+	}
+}

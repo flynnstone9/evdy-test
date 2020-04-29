@@ -1,0 +1,45 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: var(--main-accent-color);
+}
+
+.list__item {
+	padding: 10px 0 8px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+	color: var(--main-font-color);
+	border-bottom: 1px solid var(--main-bg-color);
+}
+
+.list__name {
+	text-transform: capitalize;
+	font-weight: bold;
+}
+
+.list__date {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.list__datecreate {
+	font-size: 0.75rem;
+	margin-bottom: 3px;
+	opacity: 0.8;
+}
+
+.list__datetext {
+	font-size: 0.85rem;
+}
+
+@media (min-width: 768px) {
+	.list {
+		margin-top: 50px;
+	}
+}

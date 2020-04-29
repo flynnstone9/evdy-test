@@ -1,0 +1,17 @@
+button {
+	background-color: var(--main-accent-color);
+	font-size: 14px;
+	color: var(--main-font-color);
+	margin: 20px 0px;
+	padding: 12px 40px;
+	min-height: 25px;
+	border: 1px solid var(--main-font-color);
+	min-width: 100px;
+	border-radius: 1px;
+	transition: 0.5s;
+}
+
+button:hover {
+	background-color: var(--main-font-color);
+	color: var(--secondary-bg-color);
+}
