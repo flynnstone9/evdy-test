@@ -19,6 +19,8 @@
 .list__name {
 	text-transform: capitalize;
 	font-weight: bold;
+	text-align: left;
+	max-width: 230px;
 }
 
 .list__date {

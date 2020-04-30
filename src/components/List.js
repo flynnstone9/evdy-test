@@ -23,17 +23,18 @@ const List = ({ sortBy }) => {
 	}
 
 	let memorialsBasicData = memorials.map((m) => {
-		let { _id, creationDate, name } = m
+		let { _id, creationDate, name, displayName } = m
 		let { first, middle, last } = name
 		return {
 			key: _id,
 			creationDate: creationDate,
-			dateFormatted: moment(creationDate).format('MMMM Do YYYY, h:mm:ss a'),
+			dateFormatted: moment(creationDate).format('MMMM Do YYYY'),
 			name: name,
 			fullName: createFullName(name),
 			first: first,
 			middle: middle,
 			last: last,
+			displayName: displayName,
 		}
 	})
 
@@ -43,7 +44,7 @@ const List = ({ sortBy }) => {
 		return sortedMemorials.map((m) => {
 			return (
 				<div className='list__item' key={m.key}>
-					<div className='list__name'>{m.fullName}</div>
+					<div className='list__name'>{m.displayName}</div>
 					<div className='list__date'>
 						<div className='list__datecreate'>Date Created</div>
 						<div className='list__datetext'>{m.dateFormatted}</div>
